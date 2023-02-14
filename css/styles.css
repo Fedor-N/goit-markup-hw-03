@@ -42,15 +42,15 @@ body {
 
     max-width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    height: 72px;
-    width: 100%;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-nav {
@@ -67,6 +67,7 @@ body {
     align-items: flex-start;
     margin: 0;
     padding: 0;
+    gap: 40px;
 
 }
 
@@ -85,7 +86,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     padding-top: 20px;
-    padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 0;
 }
@@ -118,7 +118,7 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 20px;
+    padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -175,13 +175,13 @@ body {
 
 .hero-title {
     color: var(--color-light);
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    max-width: 496px;
-    margin: 0 auto 48px;
-    text-align: center;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        text-align: center;
+        padding-bottom: 64px;
 
 }
 
@@ -195,9 +195,10 @@ body {
     background: var(--color-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 0;
     cursor: pointer;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
@@ -223,10 +224,11 @@ body {
     margin: 0;
     padding: 0;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .features-record {
-    margin-right: 24px;
+    width: calc((100% - 72px)/ 4);
 
 }
 
@@ -237,10 +239,8 @@ body {
     padding: 0;
     justify-content: space-between;
     flex-grow: 1;
-}
-
-.description-record {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
+    padding-top: 72px;
 }
 
 .features-title {
@@ -260,7 +260,6 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 72px;
 }
 
 /* team */
@@ -291,7 +290,6 @@ body {
 
 .team-record {
     text-align: center;
-    flex-basis: calc((100%/4)-72px);
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -315,12 +313,12 @@ body {
 /* footer */
 .footer-record {
     width: 264px;
-    padding: 100px 0;
     margin-left: 0px;
 }
 
 .footer-back {
     background: var(--color-dark-bg);
+    padding: 120px 0;
 
 }
 
@@ -360,6 +358,7 @@ body {
 .filter-button:hover,
 .filter-button:focus {
     color: var(--color-light);
+    border: 1px solid var(--color-light-bg);
     font-weight: 500;
     background: var(--color-bg-button);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -387,7 +386,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    flex-basis: calc(100% / 3 - 48px);
+    flex-basis: calc ((100% / 3)-48px);
     padding-bottom: 120px;
     padding-left: 0;
     margin: 0;
@@ -396,8 +395,13 @@ body {
 .tickets-text {
     padding: 32px;
     padding-left: 16px;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
 }
-
+/* 
 .ticket {
     border-bottom: 1px solid #E7E9FC;
-}
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+} */
