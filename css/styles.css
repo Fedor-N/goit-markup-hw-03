@@ -385,9 +385,9 @@ body {
 .cards-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 24px;
-    padding-left: 0;
+    padding: 0 0 0 0;
     margin: 0;
     row-gap: 48px;
 }
@@ -396,9 +396,4 @@ body {
     padding-left: 16px;
     border: solid #E7E9FC;
     border-width: 0 1px 1px 1px;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-
 }
