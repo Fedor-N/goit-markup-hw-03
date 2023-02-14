@@ -21,6 +21,8 @@ h6 {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -42,10 +44,12 @@ body {
 
     max-width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    
 }
 
 .header-container {
@@ -160,7 +164,8 @@ body {
 /* hero */
 .hero-section {
     background: var(--color-dark-bg);
-    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 
 }
 
@@ -169,7 +174,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 600px;
 
 }
 
@@ -181,7 +185,7 @@ body {
         letter-spacing: 0.02em;
         max-width: 496px;
         text-align: center;
-        padding-bottom: 64px;
+        margin-bottom: 64px;
 
 }
 
@@ -215,7 +219,8 @@ body {
 
 /* features */
 .features-section {
-    padding: 120px 0;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .features-list {
@@ -232,17 +237,6 @@ body {
 
 }
 
-.description-list {
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    flex-grow: 1;
-    padding-bottom: 120px;
-    padding-top: 72px;
-}
-
 .features-title {
     color: var(--color-dark-bg);
     letter-spacing: 0.02em;
@@ -253,6 +247,9 @@ body {
 }
 
 /* what are we doing */
+.description-section {
+    padding-bottom: 120px;
+}
 .secondary-title {
     color: var(--color-dark-bg);
     font-weight: 700;
@@ -260,14 +257,22 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 72px;
+}
+
+.description-list {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
 }
 
 /* team */
 .section-team {
     background: var(--color-light-bg);
-    /* height: 732px; */
+    padding: 120px 0;
 }
-
 .team-title {
     color: var(--color-dark-bg);
     font-weight: 700;
@@ -275,14 +280,13 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
+    
 }
 
 .team-link {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
     margin: 0;
     padding-left: 0;
 
@@ -324,16 +328,16 @@ body {
 
 .footer-text {
     color: var(--color-secondary);
-    padding-top: 16px;
+    margin-top: 16px;
 }
-
+/* portfolio */
 /* filter */
+
 .nav-portfolio {
     display: flex;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
-    margin-top: 96px;
 }
 
 .nav-button {
@@ -358,11 +362,11 @@ body {
 .filter-button:hover,
 .filter-button:focus {
     color: var(--color-light);
-    border: 1px solid var(--color-light-bg);
     font-weight: 500;
     background: var(--color-bg-button);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.09), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    border: 1px solid var(--color-light-bg);
 }
 
 .filter-title {
@@ -371,37 +375,31 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
-/* tickets */
-.tickets {
-    display: flex;
-    flex-direction: column;
-
+.section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
-
-.tickets-record {
+.cards-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    flex-basis: calc ((100% / 3)-48px);
-    padding-bottom: 120px;
+    flex-basis: calc((100% - 48px)/3);
     padding-left: 0;
     margin: 0;
+    row-gap: 48px;
 }
-
-.tickets-text {
+.card-text {
     padding: 32px;
     padding-left: 16px;
-    border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
+    border: solid #E7E9FC;
+    border-width: 0 1px 1px 1px;
 }
-/* 
-.ticket {
-    border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-} */
+.card {
+    display: flex;
+    flex-direction: column;
+
+}
